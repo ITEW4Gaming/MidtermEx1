@@ -46,10 +46,11 @@ body {
   text-align: center; /* Center align text */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow for better visibility */
   z-index: 1;
+  margin-top: 50px;
 }
 
 .home-container > p {
-  margin-top: 20px; /* Adjusted margin */
+  margin-top: 0; /* Adjusted margin */
   color: #fff;
   font-size: 24px; /* Adjusted font size */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font family */
@@ -58,13 +59,14 @@ body {
 }
 
 .home-btns {
-  margin-top: 32px;
+  margin-top: 5px;
+  z-index: 1;
 }
 
 .home-btns .btn {
-  margin: 6px;
+  margin: 2px;
   padding: 12px 24px; /* Adjusted padding */
-  background-color: #4CAF50; /* Green background color */
+  background-color: darkblue; /* Green background color */
   color: #fff;
   font-size: 20px;
   border: none;
@@ -74,7 +76,7 @@ body {
 }
 
 .home-btns .btn:hover {
-  background-color: #45a049; /* Darker green background color on hover */
+  background-color: skyblue; /* Darker green background color on hover */
 }
 
 @media screen and (max-width: 960px) {
@@ -85,11 +87,11 @@ body {
 
 @media screen and (max-width: 768px) {
   .home-container > h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .home-container > p {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .btn {

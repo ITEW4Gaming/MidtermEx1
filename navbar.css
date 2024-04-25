@@ -61,6 +61,7 @@ body {
   .navbar {
     grid-template-columns: auto auto; /* Adjusted grid-template-columns */
     position: sticky; /* Add position relative */
+    align-items: center;
   }
 
   .navbar-links {
@@ -95,17 +96,19 @@ body {
   }
 
   .menu-icon {
-    display: flex; /* Display menu icon for smaller screens */
-    justify-content: flex-end; /* Align menu icon to the right */
-    cursor: pointer;
-    color: white; /* Set text color */
-    font-size: 28px; /* Increased font size for menu icon */
-    padding-right: 50px;
+  display: flex; /* Display menu icon for smaller screens */
+  justify-content: flex-end; /* Center menu icon horizontally */
+  align-items: center; /* Center menu icon vertically */
+  cursor: pointer;
+  color: white; /* Set text color */
+  font-size: 28px; /* Increased font size for menu icon */
+  padding-right: 50px; /* Adjusted padding */
   }
 
-  .menu-icon:hover {
-    color: #ccc; /* Change color on hover for better UX */
-  }
+.menu-icon:hover {
+  color: #ccc; /* Change color on hover for better UX */
+}
+
 
   .navbar.active .navbar-links {
     display: flex; /* Display navbar links when active */
