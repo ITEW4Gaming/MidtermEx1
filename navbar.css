@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Use a more common font family */
+  overflow-x: hidden; /* Prevent scrolling to the left */
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* Added an additional column for the menu icon */
+  background: linear-gradient(to right, aliceblue, lightblue, skyblue, darkblue); /* Gradient background */
+  color: white;
+  padding: 0 20px; /* Adjusted padding */
+  height: 80px;
+  width: 100vw; /* Take up entire viewport width */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  align-items: center;
+  margin: 0; /* Remove default margin */
+}
+
+.navbar-logo {
+  margin-left: 30px;
+}
+
+.navbar-logo img {
+  height: 50px; /* Adjust the height of the logo */
+  vertical-align: middle; /* Align the logo vertically with the navbar */
+}
+
+.navbar-logo span {
+  color: darkblue;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 30px;
+  padding-bottom: 6px;
+  transition: border-bottom 0.3s ease-out;
+  font-size: 18px; /* Increased font size */
+}
+
+.navbar-links a:hover {
+  border-bottom: 4px solid #fff;
+}
+
+.menu-icon {
+  display: none; /* Hide menu icon by default */
+}
+
+@media screen and (max-width: 960px) {
+  .navbar {
+    grid-template-columns: auto auto; /* Adjusted grid-template-columns */
+    position: sticky; /* Add position relative */
+  }
+
+  .navbar-links {
+    display: none; /* Hide navbar links by default */
+    flex-direction: column; /* Display navbar links vertically */
+    position: absolute; /* Position the navbar links absolutely */
+    top: 100%; /* Position the navbar links just below the navbar */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: #fff; /* Background color for navbar links */
+    color: skyblue;
+    padding: 20px; /* Add padding */
+    border-radius: 5px; /* Add some border-radius for better appearance */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    width: 100vw; /* Make navbar links occupy the whole viewport width */
+    margin: 0; /* Remove default margin */
+  }
+
+  .navbar-links a {
+    margin: 10px 0; /* Adjust margin between links */
+    color: skyblue; /* Set text color */
+    width: 100%; /* Make each link occupy the whole width */
+    text-align: center; /* Center align the text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and color */
+    padding: 10px 0; /* Adjusted padding */
+    font-size: 20px; /* Increased font size */
+  }
+
+  .navbar-links a:hover {
+    background-color: white; /* Change background color on hover */
+    color: #242424; /* Change text color on hover */
+  }
+
+  .menu-icon {
+    display: flex; /* Display menu icon for smaller screens */
+    justify-content: flex-end; /* Align menu icon to the right */
+    cursor: pointer;
+    color: white; /* Set text color */
+    font-size: 28px; /* Increased font size for menu icon */
+    padding-right: 50px;
+  }
+
+  .menu-icon:hover {
+    color: #ccc; /* Change color on hover for better UX */
+  }
+
+  .navbar.active .navbar-links {
+    display: flex; /* Display navbar links when active */
+  }
+
+  .navbar.active .menu-icon {
+    color: #fff; /* Change color of menu icon when active */
+  }
+}

@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box; /* Add this rule */
+}
+
+.slideshow-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  transform: scale(1);
+  transition: transform 1s ease, opacity 1s ease;
+  max-width: 100%;
+}
+
+.slideshow-image.animate {
+  opacity: 0;
+  transform: scale(1.05);
+}
+
+.home-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, aliceblue, lightblue, skyblue, darkblue);
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Add this rule */
+}
+
+.home-container > h1 {
+  color: #fff;
+  font-size: 72px; /* Adjusted font size */
+  font-weight: bold; /* Added font weight */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font family */
+  text-align: center; /* Center align text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow for better visibility */
+  z-index: 1;
+}
+
+.home-container > p {
+  margin-top: 20px; /* Adjusted margin */
+  color: #fff;
+  font-size: 24px; /* Adjusted font size */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font family */
+  text-align: center; /* Center align text */
+  z-index: 1;
+}
+
+.home-btns {
+  margin-top: 32px;
+}
+
+.home-btns .btn {
+  margin: 6px;
+  padding: 12px 24px; /* Adjusted padding */
+  background-color: #4CAF50; /* Green background color */
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.home-btns .btn:hover {
+  background-color: #45a049; /* Darker green background color on hover */
+}
+
+@media screen and (max-width: 960px) {
+  .home-container > h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-container > h1 {
+    font-size: 40px;
+  }
+
+  .home-container > p {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+}
