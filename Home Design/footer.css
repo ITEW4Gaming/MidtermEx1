@@ -1,0 +1,159 @@
+/* Footer Container */
+.footer-container {
+  background-color: #1a1a1a;
+  padding: 4rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif; /* Change font */
+}
+
+/* Subscription Section */
+.footer-subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 24px;
+  color: #fff;
+}
+
+.footer-subscription-heading {
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #add8e6; /* Change text color to light blue */
+}
+
+.footer-subscription-text {
+  margin-bottom: 24px;
+  font-size: 20px;
+  color: #b1b1b1; /* Change text color */
+}
+
+.footer-input {
+  padding: 12px 20px; /* Increase padding */
+  border-radius: 4px; /* Increase border radius */
+  margin-bottom: 16px;
+  border: 1px solid #add8e6; /* Change border color to light blue */
+  background-color: #333; /* Change background color */
+  color: #fff; /* Change text color */
+}
+
+.footer-input::placeholder {
+  color: #b1b1b1; /* Change placeholder color */
+}
+
+.btn-footer {
+  padding: 12px 20px; /* Increase padding */
+  border: none;
+  border-radius: 4px; /* Increase border radius */
+  background-color: #add8e6; /* Change button background color to light blue */
+  color: #1a1a1a; /* Change button text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition effect */
+  font-family: Arial, sans-serif; /* Change font */
+}
+
+.btn-footer:hover {
+  background-color: #87ceeb; /* Change button background color on hover to light blue */
+  color: #fff; /* Change button text color on hover */
+}
+
+/* Footer Links Section */
+.footer-links {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.footer-link-items {
+  margin: 16px;
+  text-align: center;
+}
+
+.footer-link-items h2 {
+  margin-bottom: 16px;
+  font-size: 20px; /* Change font size */
+  color: #add8e6; /* Change text color to light blue */
+}
+
+.footer-link-items a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease; /* Add transition effect */
+}
+
+.footer-link-items a:hover {
+  color: #add8e6; /* Change link color on hover to light blue */
+}
+
+/* Social Media Section */
+.social-media-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icon-link {
+  color: #add8e6; /* Change icon color to light blue */
+  font-size: 24px;
+  transition: color 0.3s ease; /* Add transition effect */
+}
+
+.social-icon-link:hover {
+  color: #87ceeb; /* Change icon color on hover to blue */
+}
+
+.website-rights {
+  color: #b1b1b1; /* Change text color */
+  margin-top: 20px;
+  font-size: 14px; /* Change font size */
+  text-align: center; /* Center-align the text */
+}
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+  .footer-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    padding-top: 2rem;
+  }
+
+  .footer-input {
+    width: 70%;
+  }
+
+  .btn-footer {
+    width: 50%;
+  }
+
+  .footer-link-wrapper {
+    flex-direction: column;
+  }
+
+  .social-media-wrap {
+    flex-direction: column;
+  }
+}

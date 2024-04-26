@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travel Go: Your personalize travel guide</title>
-  <link rel="stylesheet" href="home.css"> 
-  <link rel="stylesheet" href="navbar.css"> 
-  <link rel="stylesheet" href="footer.css"> 
-  <link rel="stylesheet" href="card.css">
+  <link rel="stylesheet" href="Home Design/home.css"> 
+  <link rel="stylesheet" href="Home Design/navbar.css"> 
+  <link rel="stylesheet" href="Home Design/footer.css"> 
+  <link rel="stylesheet" href="Home Design/card.css">
 </head>
 <body>
   <nav class="navbar">
@@ -25,75 +25,51 @@
   </nav>
   <div class="home-container">
     <div class="slideshow">
-      <img src="images/img-1.jpg" alt="Slide 1" class="slideshow-image">
-      <img src="images/img-2.jpg" alt="Slide 2" class="slideshow-image">
+      <img src="images/img-2.jpg" alt="Slide 1" class="slideshow-image">
+      <img src="images/img-11.jpg" alt="Slide 2" class="slideshow-image">
       <img src="images/img-3.jpg" alt="Slide 3" class="slideshow-image">
     </div>
     <h1>Travel Go</h1>
-    <p><em>Start your journey now</em></p>
+    <p class="quote-text"><em>The world is a book, and those who do not travel read only one page. - Saint Augustine</em></p>
     <div class="home-btns">
       <button class="btn" onclick="handleButtonClick()">Let's Go!</button>
     </div>
   </div>
 
-  <div class="destination-container">
-    <h1> Destinations </h1>
+   <div class="destination-container">
+    <h1>Choose Destinations </h1>
     <br>
     <div class="container">
       <div class="card">
-        <img src="images/img-5.jpg" alt="Destination 1">
+        <img src="images/img-11.jpg" alt="Boracay">
         <div class="card-content">
-          <h3>Destination 1</h3>
-          <p>Description of Destination 1.</p>
+          <h3>Boracay</h3>
+          <p>Boracay is a tropical paradise known for its stunning white sand beaches, crystal-clear waters, and vibrant nightlife. It offers a wide range of water sports and activities, from snorkeling and diving to kiteboarding and parasailing. Visitors can also explore the island's lush interior, go on boat tours, or simply relax on the beach and enjoy breathtaking sunsets.</p>
+          <a href="#" class="read-more">Read More...</a>
         </div>
       </div>
       <div class="card">
-        <img src="images/img-4.jpg" alt="Destination 2">
+        <img src="images/img-12.jpg" alt="Palawan">
         <div class="card-content">
-          <h3>Destination 2</h3>
-          <p>Description of Destination 2.</p>
+          <h3>Palawan</h3>
+          <p>Palawan is renowned for its pristine beaches, crystal-clear turquoise waters, and stunning limestone cliffs. It's home to some of the world's most beautiful islands and natural attractions, including the UNESCO World Heritage-listed Puerto Princesa Underground River, El Nido's picturesque lagoons and Bacuit archipelago, and Coron's mesmerizing dive sites and shipwrecks.</p>
+          <a href="#" class="read-more">Read More...</a>
         </div>
       </div>
       <div class="card">
-        <img src="images/img-5.jpg" alt="Destination 1">
+        <img src="images/img-13.jpg" alt="Bohol">
         <div class="card-content">
-          <h3>Destination 1</h3>
-          <p>Description of Destination 1.</p>
+          <h3>Bohol</h3>
+          <p>Bohol is famous for its unique geological formations, including the Chocolate Hills, thousands of cone-shaped hills covered in green grass that turn brown during the dry season, resembling chocolate kisses. The island also boasts stunning beaches, vibrant coral reefs for diving and snorkeling, and cultural attractions like the centuries-old Baclayon Church and the adorable tarsiers, one of the world's smallest primates.</p>
+          <a href="#" class="read-more">Read More...</a>
         </div>
       </div>
       <div class="card">
-        <img src="images/img-5.jpg" alt="Destination 1">
+        <img src="images/img-14.jpg" alt="Siargao">
         <div class="card-content">
-          <h3>Destination 1</h3>
-          <p>Description of Destination 1.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="images/img-5.jpg" alt="Destination 1">
-        <div class="card-content">
-          <h3>Destination 1</h3>
-          <p>Description of Destination 1.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="images/img-5.jpg" alt="Destination 1">
-        <div class="card-content">
-          <h3>Destination 1</h3>
-          <p>Description of Destination 1.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="images/img-5.jpg" alt="Destination 1">
-        <div class="card-content">
-          <h3>Destination 1</h3>
-          <p>Description of Destination 1.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="images/img-5.jpg" alt="Destination 1">
-        <div class="card-content">
-          <h3>Destination 1</h3>
-          <p>Description of Destination 1.</p>
+          <h3>Siargao</h3>
+          <p>Siargao is known as the surfing capital of the Philippines, attracting surfers from around the world to its legendary Cloud 9 wave. Beyond surfing, the island offers stunning natural beauty, including pristine beaches, crystal-clear lagoons, and lush coconut palm forests. Visitors can also explore nearby islands, go island-hopping, or indulge in delicious fresh seafood.</p>
+          <a href="#" class="read-more">Read More...</a>
         </div>
       </div>
     </div>
@@ -102,10 +78,10 @@
   <div class='footer-container'>
   <section class='footer-subscription'>
     <p class='footer-subscription-heading'>
-      Join the Adventure newsletter to receive our best vacation deals
+      Join the Travel Go for news and updates
     </p>
     <p class='footer-subscription-text'>
-      You can unsubscribe at any time.
+      You can cancel it at any time.
     </p>
     <div class='input-areas'>
       <form>
@@ -115,7 +91,7 @@
           type='email'
           placeholder='Your Email'
         />
-        <button class='btn btn--outline' type='submit'>Subscribe</button>
+        <button class='btn-footer' type='submit'>Join Now</button>
       </form>
     </div>
   </section>
@@ -123,63 +99,28 @@
     <div class='footer-link-wrapper'>
       <div class='footer-link-items'>
         <h2>About Us</h2>
-        <a href='/sign-up'>How it works</a>
-        <a href='/'>Testimonials</a>
-        <a href='/'>Careers</a>
-        <a href='/'>Investors</a>
-        <a href='/'>Terms of Service</a>
       </div>
       <div class='footer-link-items'>
         <h2>Contact Us</h2>
-        <a href='/'>Contact</a>
-        <a href='/'>Support</a>
-        <a href='/'>Destinations</a>
-        <a href='/'>Sponsorships</a>
       </div>
     </div>
     <div class='footer-link-wrapper'>
       <div class='footer-link-items'>
         <h2>Videos</h2>
-        <a href='/'>Submit Video</a>
-        <a href='/'>Ambassadors</a>
-        <a href='/'>Agency</a>
-        <a href='/'>Influencer</a>
       </div>
       <div class='footer-link-items'>
         <h2>Social Media</h2>
-        <a href='/'>Instagram</a>
-        <a href='/'>Facebook</a>
-        <a href='/'>Youtube</a>
-        <a href='/'>Twitter</a>
       </div>
     </div>
   </div>
   <section class='social-media'>
     <div class='social-media-wrap'>
       <small class='website-rights'>Travel Go © 2024</small>
-      <div class='social-icons'>
-        <a href='/' class='social-icon-link facebook' target='_blank' aria-label='Facebook'>
-          <i class='fab fa-facebook-f'></i>
-        </a>
-        <a href='/' class='social-icon-link instagram' target='_blank' aria-label='Instagram'>
-          <i class='fab fa-instagram'></i>
-        </a>
-        <a href='/' class='social-icon-link youtube' target='_blank' aria-label='Youtube'>
-          <i class='fab fa-youtube'></i>
-        </a>
-        <a href='/' class='social-icon-link twitter' target='_blank' aria-label='Twitter'>
-          <i class='fab fa-twitter'></i>
-        </a>
-        <a href='/' class='social-icon-link twitter' target='_blank' aria-label='LinkedIn'>
-          <i class='fab fa-linkedin'></i>
         </a>
       </div>
     </div>
   </section>
 </div>
-
-
-
   <script src="home.js"></script> <!-- Include additional JavaScript file -->
 </body>
 </html>

@@ -19,7 +19,7 @@ body {
 }
 
 .slideshow-image.animate {
-  opacity: 0;
+  opacity: 0.1;
   transform: scale(1.05);
 }
 
@@ -47,7 +47,9 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow for better visibility */
   z-index: 1;
   margin-top: 50px;
+  line-height: 1.2; /* Improved line height for better readability */
 }
+
 
 .home-container > p {
   margin-top: 0; /* Adjusted margin */
