@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const navbarLinks = document.querySelector('.navbar-links');
   const slideshowImages = document.querySelectorAll('.slideshow-image');
   const quoteText = document.querySelector('.quote-text');
+  const destinationContainer = document.querySelector('.destination-container');
 
   let currentImageIndex = 0;
 
@@ -21,21 +22,22 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   setInterval(toggleAnimation, 5000);
-  setInterval(toggleQuoteAnimation, 5000); // Add interval for quote animation
+  setInterval(toggleQuoteAnimation, 5000);
 
-  // Function to change navbar background color on scroll
   const changeBackground = () => {
-    if (window.scrollY >= 50) { // Adjusted the scroll position
+    if (window.scrollY >= 300) {
       navbar.style.background = 'linear-gradient(to left, lightblue, darkblue)';
-      navbar.style.transition = 'background 0.5s ease'; // Add transition for smooth color change
+      navbar.style.transition = 'background 0.5s ease';
       span.style.color = 'white';
+      navbar.style.animation = 'navbarAnimation 0.5s ease'; // Add animation to navbar
     } else {
       navbar.style.background = '';
-      span.style.color = ''; // Reset color to default
+      span.style.color = '';
+      navbar.style.animation = '';
     }
   }
 
-  // Function to change quote text
+
   const changeQuote = () => {
     const quotes = [
       "The world is a book, and those who do not travel read only one page. - Saint Augustine",
@@ -53,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
     quoteText.innerHTML = `<em>${quotes[randomIndex]}</em>`;
   }
 
-  setInterval(changeQuote, 5000); // Change quote every 5 seconds
+  setInterval(changeQuote, 5000);
 
   menuIcon.addEventListener('click', function() {
     navbarLinks.classList.toggle('active');
@@ -61,4 +63,29 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   window.addEventListener('scroll', changeBackground);
+
+   function handleButtonClick() {
+    // Calculate the offset to scroll slightly above the destination container
+    const offset = 50; // Adjust this value as needed
+    const destinationContainerTop = destinationContainer.offsetTop;
+    const scrollToPosition = destinationContainerTop - offset;
+
+    // Scroll to the calculated position with animation
+    window.scrollTo({
+      top: scrollToPosition,
+      behavior: 'smooth'
+    });
+
+    // Apply animation to the destination container
+    destinationContainer.style.animation = 'scrollAnimation 0.5s ease'; // Adjust animation duration as needed
+
+    // Reset animation after completion
+    setTimeout(() => {
+      destinationContainer.style.animation = '';
+    }, 500); // Adjust timeout duration to match animation duration
+  }
+
+
+  const letsGoButton = document.querySelector('.btn');
+  letsGoButton.addEventListener('click', handleButtonClick);
 });
