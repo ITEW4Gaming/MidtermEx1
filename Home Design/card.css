@@ -51,7 +51,7 @@
   padding: 20px;
 }
 
-h1 {
+.destination-container h1, .destination-container p {
   font-family: Arial, sans-serif; /* Add font family */
   color: #333; /* Change font color */
   text-align: center; /* Center align the text */

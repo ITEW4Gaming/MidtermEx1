@@ -1,0 +1,156 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    position: relative;
+    margin-top: 0;
+    background-image: url('images/img-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    border-top: 5px solid #0099ff; /* Add top border */
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 20px;
+    z-index: 1;
+}
+
+/* About container styles */
+.about-container {
+    background: #333; /* Dark background color for contrast */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    border-top: 5px solid #0099ff; /* Add top border */
+}
+
+.about-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.about-content {
+    padding: 30px; /* Adjust padding as needed */
+    padding-left: 50px;
+    text-align: center; /* Center text within the container */
+}
+
+/* Section styles */
+.section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px; /* Add margin between sections */
+}
+
+.section img {
+    width: 100px; /* Adjust image width */
+    margin-right: 50px; /* Add margin between image and text */
+}
+
+.section-content {
+    flex: 1; /* Fill remaining space */
+    text-align: left; /* Align text to the left */
+}
+
+.section-content h2 {
+    margin-top: 0; /* Remove top margin of heading */
+}
+
+/* Cards header styles */
+.cards-header {
+    text-align: center; /* Center the header text */
+    border-top: 1px solid #0099ff; /* Add top border */
+    background: linear-gradient(to bottom, #ffffff, #0099ff); /* Background gradient */
+}
+
+/* About card container styles */
+.about-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 columns with minimum width of 300px */
+    gap: 20px; /* Add gap between grid items */
+    justify-content: center; /* Center items horizontally */
+    padding: 0 10px 30px; /* Adjust padding */
+    padding-bottom: 50px;
+    background: linear-gradient(to bottom, #ffffff, #0099ff); /* Background gradient */
+}
+
+/* About card styles */
+.about-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f4f4f4; /* Background color */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px; /* Add margin at the bottom to separate image and content */
+}
+
+.member-content {
+    text-align: center; /* Center the content */
+}
+
+.member-content h3 {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    color: #333;
+    font-family: 'Arial', sans-serif; /* Change the font */
+}
+
+.member-content p {
+    margin: 0;
+    font-size: 1rem;
+    color: #666;
+    font-family: 'Arial', sans-serif; /* Change the font */
+}
+
+@media screen and (max-width: 960px) {
+    .about-card-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); /* Adjust column width for smaller screens */
+    }
+}

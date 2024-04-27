@@ -1,0 +1,72 @@
+/* Add hover effect and animation */
+.card-details-html {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-bottom: 50px; /* Add margin to the bottom */
+  background: linear-gradient(to bottom right, #fff, skyblue); /* Adjust background gradient */
+  border-top: 5px solid skyblue; /* Add top border */
+  border-image: linear-gradient(to right, lightblue, skyblue); /* Gradient top border */
+  border-image-slice: 1; /* Ensure the border image covers the entire border */
+}
+
+/* Add hover effect */
+#destination-image-html:hover, #destination-content-html:hover  {
+  transform: translateY(-5px); /* Move card slightly up on hover */
+}
+
+#destination-image-html {
+  width: 100%; /* Adjust image width */
+  height: 50vh; /* Ensure image covers entire container */
+  border-radius: 8px; /* Add border radius for image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for image */
+  align-self: flex-start; /* Align image to the left */
+  transition: transform 0.3s ease-in-out;
+}
+
+#destination-content-html {
+  text-align: justify;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Change font family */
+  font-size: 16px; /* Set font size */
+  line-height: 1.6; /* Set line height */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Add padding to all sides */
+  background: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+#destination-content-html h3 {
+  font-size: 24px; /* Set font size for heading */
+  margin-bottom: 10px; /* Add margin bottom for heading */
+}
+
+#destination-content-html ul {
+  padding-left: 20px; /* Add padding to the left for better spacing */
+}
+
+#destination-content-html li {
+  list-style-type: disc; /* Set list style */
+}
+
+@media screen and (min-width: 960px) {
+  .card-details-html {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+  }
+
+  #destination-image-html {
+    max-width: 45%;
+  }
+
+  #destination-content-html {
+    max-width: 50%;
+    padding-top: 20px;
+    padding-left: 20px; /* Add padding to the left for better spacing */
+    padding-right: 20px; /* Add padding to the right for better spacing */
+  }
+}

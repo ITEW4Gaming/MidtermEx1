@@ -1,10 +1,12 @@
+/* Global styles */
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  box-sizing: border-box; /* Add this rule */
+  box-sizing: border-box;
 }
 
+/* Slideshow image styles */
 .slideshow-image {
   object-fit: cover;
   width: 100%;
@@ -23,6 +25,7 @@ body {
   transform: scale(1.05);
 }
 
+/* Home container styles */
 .home-container {
   height: 100vh;
   width: 100vw;
@@ -35,52 +38,57 @@ body {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Add this rule */
+  box-sizing: border-box;
 }
 
+/* Home heading styles */
 .home-container > h1 {
   color: #fff;
-  font-size: 72px; /* Adjusted font size */
-  font-weight: bold; /* Added font weight */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font family */
-  text-align: center; /* Center align text */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow for better visibility */
+  font-size: 72px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 1;
   margin-top: 50px;
-  line-height: 1.2; /* Improved line height for better readability */
+  line-height: 1.2;
 }
 
-
+/* Home paragraph styles */
 .home-container > p {
-  margin-top: 0; /* Adjusted margin */
+  margin-top: 0;
   color: #fff;
-  font-size: 24px; /* Adjusted font size */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font family */
-  text-align: center; /* Center align text */
+  font-size: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
   z-index: 1;
 }
 
+/* Home button container styles */
 .home-btns {
   margin-top: 5px;
   z-index: 1;
 }
 
+/* Button styles */
 .home-btns .btn {
   margin: 2px;
-  padding: 12px 24px; /* Adjusted padding */
-  background-color: darkblue; /* Green background color */
+  padding: 12px 24px;
+  background-color: darkblue;
   color: #fff;
   font-size: 20px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  transition: background-color 0.3s ease;
 }
 
+/* Button hover styles */
 .home-btns .btn:hover {
-  background-color: skyblue; /* Darker green background color on hover */
+  background-color: skyblue;
 }
 
+/* Media queries */
 @media screen and (max-width: 960px) {
   .home-container > h1 {
     font-size: 50px;

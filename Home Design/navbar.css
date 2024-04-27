@@ -31,6 +31,7 @@ body {
 
 .navbar-logo span {
   color: darkblue;
+  font-size: 18px; /* Increased font size */
 }
 
 .navbar-links {

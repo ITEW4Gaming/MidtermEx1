@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destination Details</title>
+  <link rel="stylesheet" href="loading.css">
+  <link rel="stylesheet" href="Home Design/navbar.css"> 
+  <link rel="stylesheet" href="Home Design/footer.css">
+  <link rel="stylesheet" href="Destination Design/destination.css">
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div class="loading-overlay">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <img src="images/plane.png" alt="Logo">
+      <span>Travel Go</span>
+    </div>
+    <div class="menu-icon">&#9776;</div>
+    <div class="navbar-links">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div class="card-details-html">
+    <img id="destination-image-html" src="" alt="Destination Image">
+    <div id="destination-content-html">
+      <!-- Automatically add destination info here -->
+    </div>
+  </div>
+
+  <div class='footer-container'>
+    <section class='footer-subscription'>
+      <p class='footer-subscription-heading'>
+        Join the Travel Go for news and updates
+      </p>
+      <p class='footer-subscription-text'>
+        You can cancel it at any time.
+      </p>
+      <div class='input-areas'>
+        <form>
+          <input
+            class='footer-input'
+            name='email'
+            type='email'
+            placeholder='Your Email'
+          />
+          <button class='btn-footer' type='submit'>Join Now</button>
+        </form>
+      </div>
+    </section>
+    <small class='website-rights'>Travel Go © 2024</small> 
+  </div>
+
+  <script src="home.js"></script>
+  <script src="destination.js"></script> <!-- Include additional JavaScript file -->
+</body>
+</html>

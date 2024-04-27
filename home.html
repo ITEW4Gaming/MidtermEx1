@@ -8,21 +8,28 @@
   <link rel="stylesheet" href="Home Design/navbar.css"> 
   <link rel="stylesheet" href="Home Design/footer.css"> 
   <link rel="stylesheet" href="Home Design/card.css">
+  <link rel="stylesheet" href="loading.css">
 </head>
 <body>
+  <!-- Loading Animation -->
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
   <nav class="navbar">
-    <div class="navbar-logo">
-      <img src="images/plane.png" alt="Logo">
-      <span>Travel Go</span>
-    </div>
-    <div class="menu-icon">&#9776;</div>
-    <div class="navbar-links">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </div>
+      <div class="navbar-logo">
+        <img src="images/plane.png" alt="Logo">
+        <span>Travel Go</span>
+      </div>
+      <div class="menu-icon">&#9776;</div>
+      <div class="navbar-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
   </nav>
+
   <div class="home-container">
     <div class="slideshow">
       <img src="images/img-2.jpg" alt="Slide 1" class="slideshow-image">
@@ -38,6 +45,7 @@
 
    <div class="destination-container">
     <h1>Choose Destinations </h1>
+    <p>Explore our selection of top destinations and start planning your next adventure!</p>
     <br>
     <div class="container">
       <div class="card">
@@ -45,7 +53,7 @@
         <div class="card-content">
           <h3>Boracay</h3>
           <p>Boracay is a tropical paradise known for its stunning white sand beaches, crystal-clear waters, and vibrant nightlife. It offers a wide range of water sports and activities, from snorkeling and diving to kiteboarding and parasailing. Visitors can also explore the island's lush interior, go on boat tours, or simply relax on the beach and enjoy breathtaking sunsets.</p>
-          <a href="#" class="read-more">Read More...</a>
+          <a href="destination.html?location=boracay" class="read-more">Read More...</a>
         </div>
       </div>
       <div class="card">
@@ -53,7 +61,7 @@
         <div class="card-content">
           <h3>Palawan</h3>
           <p>Palawan is renowned for its pristine beaches, crystal-clear turquoise waters, and stunning limestone cliffs. It's home to some of the world's most beautiful islands and natural attractions, including the UNESCO World Heritage-listed Puerto Princesa Underground River, El Nido's picturesque lagoons and Bacuit archipelago, and Coron's mesmerizing dive sites and shipwrecks.</p>
-          <a href="#" class="read-more">Read More...</a>
+          <a href="destination.html?location=palawan" class="read-more">Read More...</a>
         </div>
       </div>
       <div class="card">
@@ -61,7 +69,7 @@
         <div class="card-content">
           <h3>Bohol</h3>
           <p>Bohol is famous for its unique geological formations, including the Chocolate Hills, thousands of cone-shaped hills covered in green grass that turn brown during the dry season, resembling chocolate kisses. The island also boasts stunning beaches, vibrant coral reefs for diving and snorkeling, and cultural attractions like the centuries-old Baclayon Church and the adorable tarsiers, one of the world's smallest primates.</p>
-          <a href="#" class="read-more">Read More...</a>
+          <a href="destination.html?location=bohol" class="read-more">Read More...</a>
         </div>
       </div>
       <div class="card">
@@ -69,7 +77,7 @@
         <div class="card-content">
           <h3>Siargao</h3>
           <p>Siargao is known as the surfing capital of the Philippines, attracting surfers from around the world to its legendary Cloud 9 wave. Beyond surfing, the island offers stunning natural beauty, including pristine beaches, crystal-clear lagoons, and lush coconut palm forests. Visitors can also explore nearby islands, go island-hopping, or indulge in delicious fresh seafood.</p>
-          <a href="#" class="read-more">Read More...</a>
+          <a href="destination.html?location=siargao" class="read-more">Read More...</a>
         </div>
       </div>
     </div>

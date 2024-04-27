@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
+  // Select the loading overlay
+  const loadingOverlay = document.querySelector('.loading-overlay');
+
+  // Hide loading animation with a 3-second delay
+  setTimeout(function() {
+    loadingOverlay.style.display = 'none'; // Hide loading overlay
+  }, 2000); // 3000 milliseconds = 3 seconds
+
+  // Your existing JavaScript code below
   const menuIcon = document.querySelector('.menu-icon');
   const navbar = document.querySelector('.navbar');
   const span = document.querySelector('.navbar-logo span');
@@ -66,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
    function handleButtonClick() {
     // Calculate the offset to scroll slightly above the destination container
-    const offset = 50; // Adjust this value as needed
+    const offset = 45; // Adjust this value as needed
     const destinationContainerTop = destinationContainer.offsetTop;
     const scrollToPosition = destinationContainerTop - offset;
 
